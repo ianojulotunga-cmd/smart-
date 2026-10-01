@@ -1,0 +1,60 @@
+========================================
+  WIDE CITY SMART DIGITAL HOMES
+  How to open the website
+========================================
+
+1. EXTRACT the zip file completely.
+   You must see this structure:
+
+   wide-city-smart-digital-homes/
+   ├── index.html          <--- open this file
+   ├── css/
+   │   └── styles.css
+   ├── js/
+   │   ├── products.js
+   │   └── app.js
+   ├── backend/
+   ├── README.md
+   └── START-HERE.txt
+
+2. EASIEST WAY TO OPEN:
+
+   Option A – Double-click
+   - Open the folder "wide-city-smart-digital-homes"
+   - Double-click the file named:  index.html
+
+   Option B – Local server (recommended)
+   - Open terminal / command prompt inside the folder
+   - Run:   python -m http.server 8080
+   - Open browser and go to:  http://localhost:8080
+
+3. If the page is blank:
+   - Make sure you extracted the zip (do not open files inside the zip)
+   - Make sure css/ and js/ folders are next to index.html
+   - Press F12 in the browser → Console tab and check for errors
+
+4. Features that work immediately:
+   - Search products
+   - Filter by category
+   - Add to cart / change quantity
+   - Checkout with M-Pesa (Demo mode if backend is not running)
+
+5. For real M-Pesa STK Push:
+   See README.md → section "Full Setup with Real M-Pesa STK Push"
+
+========================================
+  Push to GitHub for a public link
+========================================
+
+cd wide-city-smart-digital-homes
+git init
+git add .
+git commit -m "Wide City Smart Digital Homes e-commerce"
+# Create a new empty repo on github.com, then:
+git remote add origin https://github.com/YOUR_USERNAME/wide-city-smart-digital-homes.git
+git branch -M main
+git push -u origin main
+
+Then enable GitHub Pages (Settings → Pages → Deploy from main).
+Your live link will be:
+https://YOUR_USERNAME.github.io/wide-city-smart-digital-homes/
